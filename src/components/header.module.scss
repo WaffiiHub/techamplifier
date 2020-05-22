@@ -1,0 +1,49 @@
+.header {
+  background: #1d014b;
+  width: 100%;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTextBox {
+  margin-left: 1rem;
+  padding-bottom: 0;
+  & img {
+    height: 60px;
+    margin-bottom: 0;
+    padding: 0.3rem 0;
+  }
+}
+
+.nav-toggle {
+  padding: 1rem 1rem 0;
+}
+@media only screen and (max-width: 500px) {
+  .headerText {
+    font-size: 1.8rem;
+    padding: 1rem 0rem 0rem;
+    .headerTextBox {
+      padding: 0;
+    }
+    & a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  .headerTextBox {
+    padding: 0.1rem 2rem;
+  }
+}
